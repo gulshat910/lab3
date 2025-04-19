@@ -8,7 +8,7 @@ class Student:
         if 0 <= grade <= 10:
             self.grades.append(grade)
         else:
-            raise ValueError("Оценка должна быть в диапазоне от 0 до 10")
+            raise ValueError("Оценка должна быть от 0 до 10")
 
     def get_average(self):
         if not self.grades:
