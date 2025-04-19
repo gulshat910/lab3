@@ -16,10 +16,10 @@ class Student:
         return sum(self.grades) / len(self.grades)
 
     def display_info(self):
-        print(f"Имя: {self.name}")
-        print(f"ID студента: {self.student_id}")
-        print(f"Оценки: {', '.join(map(str, self.grades))}")
-        print(f"Средний балл: {self.get_average()}")
+        print("Имя: {self.name}")
+        print("ID студента: {self.student_id}")
+        print("Оценки: {', '.join(map(str, self.grades))}")
+        print("Средний балл: {self.get_average()}")
 
     def __str__(self):
         return f"Студент({self.name}, {self.student_id}, {self.grades})"
